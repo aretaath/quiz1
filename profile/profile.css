@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,700&display=swap');
+
+body {
+    line-height: 1.5;
+    color: #4f5962;
+    font-size: 15px;
+    font-family: 'poppins';
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #0d3042;
+}
+
+.title-sm {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+a {
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+
+img {
+    width: 100%;
+}
+
+small {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.navbar {
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.129);
+}
+
+.logo-text {
+    font-size: 21px;
+    color: #0d3042 !important;
+}
+
+.navbar .nav-link {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #415478 !important;
+}
+
+#profile{
+    background: linear-gradient(to right, #0d3042, #20698e);
+     min-height: 100vh !important;
+    min-width: 100vh !important;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+.section-intro .hline{
+    width: 120px;
+    height: 2px;
+    background-color: hsla(206, 15%, 82%, 0.316);
+    margin: 16px auto 0 auto;
+    padding: 1;
+}
+
+.hobbies-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.hobbies-item img,
+.hobbies-item .hobbies-overlay {
+    transition: all 0.4s ease;
+}
+
+.hobbies-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: hsla(200, 66%, 15%, 0.688);
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    opacity: 0;
+}
+
+.hobbies-overlay h3 {
+    color: #fff;
+}
+
+.hobbies-item:hover .hobbies-overlay {
+    opacity: 1;
+}
+
+.hobbies-item:hover img {
+    transform: scale(1.1);
+}
+

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,700&display=swap');
+
+body {
+    line-height: 1.5;
+    color: #4f5962;
+    font-size: 15px;
+    font-family: 'poppins';
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0d3042;
+}
+
+.title-sm {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+a {
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+
+img {
+    width: 100%;
+}
+
+small {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.navbar {
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.129);
+}
+
+.logo-text {
+    font-size: 21px;
+    color: #0d3042 !important;
+}
+
+.navbar .nav-link {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #415478 !important;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-intro .hline{
+    width: 120px;
+    height: 2px;
+    background-color: hsla(206, 15%, 82%, 0.323);
+    margin: 16px auto 0 auto;
+}
+
+.tourism-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.tourism-item img,
+.tourism-item .tourism-overlay {
+    transition: all 0.4s ease;
+}
+
+.tourism-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: hsla(200, 66%, 15%, 0.688);
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    opacity: 0;
+}
+
+.tourism-overlay h3 {
+    color: #fff;
+}
+
+.tourism-item:hover .tourism-overlay {
+    opacity: 1;
+}
+
+.tourism-item:hover img {
+    transform: scale(1.1);
+}
